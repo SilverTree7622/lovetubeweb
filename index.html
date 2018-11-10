@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<meta charchest = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 <html>
 <head>
 	<title>
@@ -7,27 +8,55 @@
 	</title>
 
   <link rel="stylesheet" href="css/tab.css">
-
 </head>
-<body>
-  <header>
-    <h3>Love Tube</h3>
 
-    <nav>
-      <ul>
-        <li><a href="tab/home.html">Youtube</a></li>
-        <li><a href="tab/likelist.html">Like</a></li>
-        <li><a href="tab/laterlist.html">Later</a></li>
-        <li><a href="tab/offlist.html">Offline</a></li>
-      </ul>
-    </nav>
+<body>
+
+  <header>
+    <!--반응형 탭 html-->
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+		  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+		  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+		</div>
+
+		<!--Youtube Tab-->
+		<div id="London" class="tabcontent">
+		  <h3>London</h3>
+		  <p>London is the capital city of England.</p>
+		</div>
+
+		<!--Favorite Tab-->
+		<div id="Paris" class="tabcontent">
+		  <h3>Paris</h3>
+		  <p>Paris is the capital of France.</p>
+		</div>
+
+		<!--Later Tab-->
+		<div id="Tokyo" class="tabcontent">
+		  <h3>Tokyo</h3>
+		  <p>Tokyo is the capital of Japan.</p>
+		</div>
   </header>
 
+<!--Javascript section-->
   <section>
-
+		<script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+		</script>
   </section>
-
-
 
 
 </body>
