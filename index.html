@@ -30,12 +30,17 @@
 
 		<!--Youtube Tab-->
 		<div id="Youtube" class="tabcontent">
-		  <iframe id="youtubestyle" src="https://www.youtube.com/" width="100%"></iframe>
+			<!--domain이 다를 경우로 임의로 맞춰줘서 오류를 없애는 script-->
+			<script>
+				document.domain="file:///D:/htmlworkspace/lovetubeweb";
+			</script>
+
+		  <iframe id="youtubestyle" src="https://www.youtube.com/" width="100%" frameborder="0"></iframe>
 		</div>
 
 		<!--Favorite Tab-->
 		<div id="Favorite" class="tabcontent">
-			<iframe src="https://www.naver.com/" width="100%"></iframe>
+			<iframe src="https://www.naver.com/" width="100%" frameborder="0"></iframe>
 		  <h3>Favorite</h3>
 		  <p>Paris is the capital of France.</p>
 		</div>
