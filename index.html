@@ -8,11 +8,12 @@
 	</title>
 
 	<!-- tab html importing-->
- <link rel="import" href="html/youtube.html">
+ 	<link rel="import" href="html/youtube.html">
 
 	<!--Tab css-->
   <link rel="stylesheet" href="css/tab.css">
-	<link rel="stylesheet" href="css/youtube/youtube.css">
+	<link rel="stylesheet" href="css/youtube/youtubetab.css">
+	<link rel="stylesheet" href="css/iframe100.css">
 
 	<!-- get js from js folder-->
 	<script type="text/javascript" src="js/tabNetc.js"></script>
@@ -35,18 +36,21 @@
 				document.domain="file:///D:/htmlworkspace/lovetubeweb";
 			</script>
 
-		  <iframe id="youtubestyle" src="https://www.youtube.com/" width="100%" frameborder="0"></iframe>
+		  <iframe id="youtubestyle" src="https://www.youtube.com/" class="iframe100" frameborder="0"></iframe>
 		</div>
+
 
 		<!--Favorite Tab-->
 		<div id="Favorite" class="tabcontent">
-			<iframe src="https://www.naver.com/" width="100%" frameborder="0"></iframe>
+			<iframe src="https://www.naver.com/" class="iframe100" frameborder="0"></iframe>
 		  <h3>Favorite</h3>
 		  <p>Paris is the capital of France.</p>
 		</div>
 
+
 		<!--Later Tab-->
 		<div id="Later" class="tabcontent">
+			<iframe src="https://www.daum.net/" class="iframe100" frameborder="0"></iframe>
 		  <h3>Later</h3>
 		  <p>Tokyo is the capital of Japan.</p>
 		</div>
