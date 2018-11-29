@@ -6,8 +6,8 @@ body {font-family: Arial;}
 .tab {
     overflow: hidden;
     background-color: #f1f1f1;
-
     padding: none;
+
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -41,6 +41,7 @@ body {font-family: Arial;}
     padding: 16px 10px;
     background-color: Orange;
 }
+
 
 /* Create an active/current tablink class */
 .tab button.active {
