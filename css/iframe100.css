@@ -2,9 +2,8 @@
 .iframe100 {
 
   border: none;
-  height: 80vh;
-  width: 99vw;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  height: 93vh;
+  width: 100%;
+  overflow: auto;
 
 }
