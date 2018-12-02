@@ -11,8 +11,10 @@ body {
     overflow: hidden;
     background-color: #f1f1f1;
     border: 0px #ccc;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+    /* 탭 영역 구분을 위한 임시커서 모양*/
+    cursor: cell;
 }
-
 
 
 
@@ -30,7 +32,6 @@ body {
     width: 30%;
 
     border-radius: 0.6em;
-    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* Change background color of buttons on hover */
@@ -54,7 +55,6 @@ body {
 
 
 
-
 /* Create an active/current tablink class */
 .tab button.active {
   /* 탭 설정 후 다른 탭 마우스 댈시 좁혀진 채로 있는 문제의 임시방편*/
@@ -67,9 +67,13 @@ body {
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 0px 0px;
+
+    /*Margin-Top은 Tab의 아래 그림자 픽셀값과 같아야 서로 겹치지 않는다*/
+    margin-top: 1px;
     border: 0px solid #ccc;
     border-top: none;
+    padding: 0px 0px;
+
     overflow: hidden;
     height: 100%;
     width: 100%;
