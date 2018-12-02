@@ -1,8 +1,7 @@
 
-body {font-family: Arial;}
-
-header {
-    box-shadow: 0px 2.2px 0px 0px rgb(0, 0, 0, 1);
+body {
+  font-family: Arial;
+  margin: 0px;
 }
 
 
@@ -11,9 +10,7 @@ header {
 .tab {
     overflow: hidden;
     background-color: #f1f1f1;
-    padding: none;
     border: 0px #ccc;
-    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -26,18 +23,19 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 3px 10px;
+    padding: 3px 0px;
 
     font-size: 17px;
 
     width: 30%;
 
     border-radius: 0.6em;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    padding: 16px 10px;
+    padding: 16px 0px;
     background-color: Orange;
 
     transition: all 0.63s ease-out;
@@ -47,12 +45,15 @@ header {
     transition-property: padding;
     transition-duration: 1.63s;
     transition-delay: 1s;
-    padding: 3px 10px;
+    padding: 3px 0px;
 
     transition-property: background-color;
     transition: 1.63s;
     background-color: ##f1f1f1;
 }
+
+
+
 
 /* Create an active/current tablink class */
 .tab button.active {
