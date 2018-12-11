@@ -17,6 +17,10 @@
     bottom: 1px;
 }
 
+.tab :hover {
+    /*tab buttom 사이에 있는 tab을 지나더라도 tab button의 hover가 유지되게끔 하는 장치*/
+}
+
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -67,6 +71,8 @@
 /* Style the tab content */
 .tabcontent {
     display: none;
+    /*하단 TAB과의 위치를 맞추기 위해서 조절하는 값*/
+    bottom: auto;
 
     /*00 Margin-Top은 Tab의 box-shadow 아래 그림자 픽셀값과 같아야 서로 겹치지 않는다*/
     margin-top: 1px;
