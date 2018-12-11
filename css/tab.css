@@ -11,6 +11,10 @@
     /* 탭 영역 구분을 위한 임시 커서모양*/
     cursor: cell;
 
+    /*하단 TAB 형성하기 위한 위치 고정 및 지정*/
+    position: fixed;
+    width: 100%;
+    bottom: 1px;
 }
 
 
@@ -23,6 +27,7 @@
     outline: none;
     cursor: pointer;
     padding: 3px 0px;
+
 
     font-size: 17px;
 
