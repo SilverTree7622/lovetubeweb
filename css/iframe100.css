@@ -1,9 +1,9 @@
-/*iframe 전체화면표시*/
+/*iframe 보이는 화면 표시*/
 .iframe100 {
 
-  display: block;
   border: none;
-  height: 100vh;
-  width: 100vw;
+  height: 93vh;
+  width: 100%;
+  overflow: auto;
 
 }

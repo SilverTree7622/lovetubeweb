@@ -1,22 +1,36 @@
 <!DOCTYPE html>
+<!--domain이 다를 경우로 임의로 맞춰줘서 오류를 없애는 script-->
+<!--
+<script>
+	document.domain="file:///D:/htmlworkspace/lovetubeweb";
+</script>
+-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 <html>
 <head>
 	<title>
-	Love Tube
+		Love Tube
 	</title>
 
 	<!-- tab html importing-->
- 	<link rel="import" href="html/youtube.html">
+ 	<!--<link rel="import" href="html/youtube.html">-->
 
 	<!--Tab css-->
   <link rel="stylesheet" href="css/tab.css">
 	<link rel="stylesheet" href="css/youtube/youtubetab.css">
 	<link rel="stylesheet" href="css/iframe100.css">
+	<link rel="stylesheet" href="css/basicss.css">
 
 	<!-- get js from js folder-->
 	<script type="text/javascript" src="js/tabNetc.js"></script>
+
+	<!-- Tab Icon = Favicon update-->
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/hearticon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/hearticon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 
@@ -24,39 +38,33 @@
   <header>
     <!--반응형 탭 html-->
 		<div class="tab">
-		  <button class="tablinks" onclick="opentab(event, 'Youtube')">Youtube</button>
-		  <button class="tablinks" onclick="opentab(event, 'Favorite')">Favorite</button>
-		  <button class="tablinks" onclick="opentab(event, 'Later')">Later</button>
+			<button class="tablinks" onclick="opentab(event, 'Favorite')">Favorite</button>
+			<button class="tablinks" onclick="opentab(event, 'Later')">Later</button>
+		  <button class="tablinks" onclick="opentab(event, 'Youtube')">YouTube</button>
 		</div>
+	</header>
 
-		<!--Youtube Tab-->
-		<div id="Youtube" class="tabcontent">
-			<!--domain이 다를 경우로 임의로 맞춰줘서 오류를 없애는 script-->
-			<script>
-				document.domain="file:///D:/htmlworkspace/lovetubeweb";
-			</script>
+			<!--Favorite Tab-->
+			<div id="Favorite" class="tabcontent">
+				<iframe src="https://www.naver.com/" class="iframe100" frameborder="0"></iframe>
+				<h3>Favorite</h3>
+				<p>Paris is the capital of France.</p>
+			</div>
 
-		  <iframe id="youtubestyle" src="https://www.youtube.com/" class="iframe100" frameborder="0"></iframe>
-		</div>
+			<!--Later Tab-->
+			<div id="Later" class="tabcontent">
+				<iframe src="https://www.daum.net/" class="iframe100" frameborder="0"></iframe>
+			</div>
+
+			<!--Youtube Tab-->
+			<div id="Youtube" class="tabcontent">
+			  <iframe id="youtubestyle" src="https://www.youtube.com/" class="iframe100" frameborder="0"></iframe>
+			</div>
 
 
-		<!--Favorite Tab-->
-		<div id="Favorite" class="tabcontent">
-			<iframe src="https://www.naver.com/" class="iframe100" frameborder="0"></iframe>
-		  <h3>Favorite</h3>
-		  <p>Paris is the capital of France.</p>
-		</div>
 
 
-		<!--Later Tab-->
-		<div id="Later" class="tabcontent">
-			<iframe src="https://www.daum.net/" class="iframe100" frameborder="0"></iframe>
-		  <h3>Later</h3>
-		  <p>Tokyo is the capital of Japan.</p>
-		</div>
-  </header>
-
-	<!--Javascript section-->
+	<!--Javascript section tabNetc.js 내용들-->
 	  <section>
 			<script>
 			function opentab(evt, tabName) {
