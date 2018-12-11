@@ -57,7 +57,6 @@
     background-color: ##f1f1f1;
 }
 
-
 /* Create an active/current tablink class */
 .tab button.active {
   /* 탭 설정 후 다른 탭 마우스 댈시 좁혀진 채로 있는 문제의 임시방편*/
