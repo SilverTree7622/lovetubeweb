@@ -1,9 +1,11 @@
-var vWebType : Ispc;
 
-function Touchfunc() {
+function Touchfunc(vWebType) {
+
   if (vWebType == "NOTPC") {
     console.log("Not PC");
-  }else {
+  }else if(vWebType == "PC"){
     console.log("PC");
+  }else {
+    console.log("System Error: in 'lovetubeweb/js/touchcontrol.js'")
   }
 }
