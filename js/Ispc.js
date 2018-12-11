@@ -11,4 +11,6 @@ function Ispcornot() {
     vWebType = "PC";
    }
   }
+
+  Touchfunc();
 }
