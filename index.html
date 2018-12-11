@@ -25,7 +25,7 @@
 	<!-- get js from js folder-->
 	<script type="text/javascript" src="js/tabNetc.js"></script>
 	<script type="text/javascript" src="js/Ispc.js"></script>
-
+	<script type="text/javascript" src="js/touchcontrol.js"></script>
 
 	<!-- Tab Icon = Favicon update-->
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/hearticon/favicon-16x16.png">
@@ -49,8 +49,6 @@
 			<!--Favorite Tab-->
 			<div id="Favorite" class="tabcontent">
 				<iframe src="https://www.naver.com/" class="iframe100" frameborder="0"></iframe>
-				<h3>Favorite</h3>
-				<p>Paris is the capital of France.</p>
 			</div>
 
 			<!--Later Tab-->
@@ -62,26 +60,6 @@
 			<div id="Youtube" class="tabcontent">
 			  <iframe id="youtubestyle" src="https://www.youtube.com/" class="iframe100" frameborder="0"></iframe>
 			</div>
-
-
-	<!--Javascript section tabNetc.js 내용들-->
-	  <section>
-			<script>
-			function opentab(evt, tabName) {
-			    var i, tabcontent, tablinks;
-			    tabcontent = document.getElementsByClassName("tabcontent");
-			    for (i = 0; i < tabcontent.length; i++) {
-			        tabcontent[i].style.display = "none";
-			    }
-			    tablinks = document.getElementsByClassName("tablinks");
-			    for (i = 0; i < tablinks.length; i++) {
-			        tablinks[i].className = tablinks[i].className.replace(" active", "");
-			    }
-			    document.getElementById(tabName).style.display = "block";
-			    evt.currentTarget.className += " active";
-			}
-			</script>
-	  </section>
 
 
 </body>
