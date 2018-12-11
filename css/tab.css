@@ -10,6 +10,7 @@
 
     /* 탭 영역 구분을 위한 임시 커서모양*/
     cursor: cell;
+
 }
 
 
@@ -28,6 +29,8 @@
     width: 30%;
 
     border-radius: 0.6em;
+
+
 }
 
 /* Change background color of buttons on hover */
@@ -66,7 +69,7 @@
 
     /*00 Margin-Top은 Tab의 box-shadow 아래 그림자 픽셀값과 같아야 서로 겹치지 않는다*/
     margin-top: 1px;
-    
+
     border: 0px solid #ccc;
     border-top: none;
     padding: 0px 0px;
