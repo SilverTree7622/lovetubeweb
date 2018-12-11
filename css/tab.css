@@ -6,7 +6,7 @@
     border: 0px #ccc;
 
     /*00 Margin-Top은 Tab의 box-shadow 아래 그림자 픽셀값과 같아야 서로 겹치지 않는다*/
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
 
     /* 탭 영역 구분을 위한 임시 커서모양*/
     cursor: cell;
@@ -14,7 +14,7 @@
     /*하단 TAB 형성하기 위한 위치 고정 및 지정*/
     position: fixed;
     width: 100%;
-    bottom: 1px;
+    bottom: 0px;
 }
 
 .tab :hover {
@@ -58,7 +58,6 @@
 }
 
 
-
 /* Create an active/current tablink class */
 .tab button.active {
   /* 탭 설정 후 다른 탭 마우스 댈시 좁혀진 채로 있는 문제의 임시방편*/
@@ -67,15 +66,14 @@
 }
 
 
-
 /* Style the tab content */
 .tabcontent {
     display: none;
     /*하단 TAB과의 위치를 맞추기 위해서 조절하는 값*/
-    bottom: auto;
+    height: auto;
 
     /*00 Margin-Top은 Tab의 box-shadow 아래 그림자 픽셀값과 같아야 서로 겹치지 않는다*/
-    margin-top: 1px;
+    margin-bottom: 1px;
 
     border: 0px solid #ccc;
     border-top: none;
