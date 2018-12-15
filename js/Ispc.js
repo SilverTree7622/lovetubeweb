@@ -16,3 +16,14 @@ function Ispcornot() {
   // To js/touchcontrol.js event
   Touchfunc(vWebType);
 }
+
+
+
+function widthdetector() {
+    var windowWidth = $( window ).width();
+  if(windowWidth <= 770) {
+  //창 가로 크기가 770 이상일 경우
+  } else {
+  //창 가로 크기가 770 보다 클 경우
+  }
+}
