@@ -1,4 +1,4 @@
-
+// 컴퓨터인지 아닌지 알아보는 함수
 function Ispcornot() {
   var filter = "win16|win32|win64|mac|macintel";
   var vWebType = "";  //might work for global variable
@@ -18,6 +18,7 @@ function Ispcornot() {
 }
 
 
+// windowwidth의 크기(jquery)를 측정해 컴퓨터인지 아닌지 판별하는 함수
 // windows width detect function
 function widthdetect() {
     var windowWidth = $( window ).width();
